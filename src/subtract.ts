@@ -1,6 +1,5 @@
 const subButton = document.getElementById("sub")! as HTMLInputElement;
 
-
 function subtract(num1: number, num2: number): number {
     return num1 - num2;
 }

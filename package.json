@@ -1,11 +1,12 @@
 {
   "dependencies": {
+    "uglifyjs": "^2.4.11",
     "vuejs": "^3.0.1"
   },
   "devDependencies": {
     "typescript": "^4.2.3"
   },
   "scripts": {
-    "postinstall": "tsc"
+    "postinstall": "tsc | uglifyjs public/dist/main.js --compress --mangle --warn --output public/dist/main.min.js"
   }
 }
